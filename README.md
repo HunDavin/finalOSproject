@@ -1,3 +1,11 @@
+## Team 4 OS
+============================  
+- `Prak Pychey`
+- `Leng Menghan`
+- `Kruy Seyha`
+- `Hun David`
+- `Ren Sodalin`
+- `Soeun Sokvipor`
 ## To Run The Bash Program  
 ==========================  
 1. `git clone "repo-link"`  
