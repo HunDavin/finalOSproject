@@ -1,22 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-log_file="operation.log"
+read -p "Enter File or directory: " dir
 
-log_message() {
-	echo "$(date '+%Y-%m-%d %H:%M:%S') -$1" >> "$log_file"
-}
-if [ ! -f "log_file" ]; then
-	touch "$log_file"
-	log_message "Log file created"
-fi
-
-echo "listing file"
-echo
-read -p"Enter file or directory " dir
-if [[ ! -e "$dir" ]]; then 
-	echo "Error: '$dir' does not exist"
+if [ ! -e "$dir" ]; then 
+	echo "Error Listing: $dir Dont Exist"
+	./script/logOperation.sh "Error Listing: $dir Dont Exist"
 	exit 1
-	log_message "error listing file"
 fi
-ls -lah $dir
-log_message "listed $dir "
+
+ls -l -R $dir
+./script/logOperation.sh "listed $dir "
