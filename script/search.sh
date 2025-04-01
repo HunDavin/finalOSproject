@@ -10,4 +10,4 @@ if [ ! -e "$dir" ]; then
 fi
 
 find "$dir" -type f -maxdepth 1 -name "*$search_term*"
-./script/logOperation.sh "searched $search_term in $dir"
+./script/logOperation.sh "searched $search_term in $dir"                                  
