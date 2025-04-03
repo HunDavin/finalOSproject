@@ -9,8 +9,8 @@
 ## To Run The Bash Program  
 ==========================  
 1. `git clone "repo-link"`  
-2. `chmod -R 777 BashProject`  
-3. `cd BashProject`  
+2. `chmod -R 777 finalOSproject`  
+3. `cd finalOSproject`  
 4. `./main.sh`  
 ## Overview of functionalities  
 ============================  
